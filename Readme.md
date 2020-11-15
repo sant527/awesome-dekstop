@@ -4,6 +4,7 @@ Awesome:
 ##############
 How to add custom command:
 
+```
 .config/awesome/rc.lua
 
 -- {{{ Key bindings
@@ -13,10 +14,10 @@ globalkeys = gears.table.join(
     awful.key({ modkey,           }, "e", function () awful.util.spawn_with_shell("pcmanfm") end),
     awful.key({ modkey,           }, "l", function () awful.util.spawn_with_shell("sleep 1 && xset dpms force off; slock") end),
     awful.key({ modkey,           }, "s", function () awful.util.spawn_with_shell("slock systemctl suspend -i") end),
-
+```
 #############
 change menu and add screen brightness less and reset
-
+```
 editor = "subl -a -n"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -48,8 +49,27 @@ mylauncher = awful.widget.launcher({ image = beautiful.awesome_icon,
 -- Menubar configuration
 menubar.utils.terminal = terminal -- Set the terminal for applications that require it
 -- }}}
-
+```
 ###################
+```
 rezise window -- mod + right
 move -- mod + left
+```
+
+## how to change resolution
+open terminal and run
+
+```
+krandrtray
+```
+we will see icon in the system tray there right click and go to settings and set the resolution
+
+
+## Shortcut keys
+
+win + enter   : terminator
+win + r : command input
+
+
+
 
